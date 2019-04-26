@@ -11,13 +11,13 @@ const uC = require('./controllers/userController');
 
 require('dotenv').config()
 
-function sessionCheck(req, res, next) {
-    if(req.session.user) {
-        next()
-    } else {
-        res.status(401).send('You must login')
-    }
-}
+// function sessionCheck(req, res, next) {
+//     if(req.session.user) {
+//         next()
+//     } else {
+//         res.status(401).send('You must login')
+//     }
+// }
 
  io.on('connection', function(socket){
     console.log('made socket connection')
@@ -44,12 +44,12 @@ app.use(
     })
 )
 
-// app.route('/api/signup')
-// .post(uC.signup)
-app.post('/api/login', uC.login) 
-app.post('/api/user_register', uC.signup)
 
-app.use(sessionCheck);
+
+app.post('/api/login', uC.login) 
+
+
+// app.use(sessionCheck);
 
 app.get('/api/logout', (req, res) =>{
     res.session.destory();
@@ -62,8 +62,7 @@ app.get("/api/user", (req, res) => {
 
 
 
-
-
+app.post("/api/signup", uC.signup)
 
 
 

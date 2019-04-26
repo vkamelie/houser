@@ -1,0 +1,64 @@
+.toolbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: pink;
+    height: 125px;
+
+}
+
+.toolbar_nav{
+display: flex;
+height: 100%;
+align-items: center;
+padding: 0 1rem;
+}
+
+.toolbar-logo {
+ margin-left: 1rem;
+}
+.toolbar-logo a {
+color: white;
+text-decoration: none;
+font-size: 1.5rem;
+}
+
+.space-box{
+    flex: 1;
+}
+
+.toolbar-nav-items ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.toolbar-nav-items li {
+    padding: 0 0.5rem
+}
+
+.toolbar-nav-items a {
+    color: white;
+    text-decoration: none;
+}
+
+.toolbar-nav-items a:hover,
+.toolbar-nav-items a:active {
+    color: black;
+}
+
+@media (max-width: 768px){
+    .toolbar-nav-items{
+    display: none
+    }
+}
+
+
+@media (min-width: 769px){
+    .navbar-button{
+        display: none;
+    }
+    .toolbar-logo{
+        margin-left: 0;
+    }
+}

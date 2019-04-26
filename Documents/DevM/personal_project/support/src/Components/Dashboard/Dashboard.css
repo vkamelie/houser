@@ -1,4 +1,29 @@
-.Dash {
-    background: lavender;
-    border: purple soild;
+* {
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+body {
+margin : 0;
+padding: 0;
+}
+
+/* .main-form{
+    background: pink;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} */
+
+.top-form{
+    width: 50%;
+    background-color: aquamarine;
+
+}
+
+.bottom-form {
+    width: 50%;
+  background-color: #2E4158;
+  padding: 25px 40px;
+  overflow: auto;
+
 }

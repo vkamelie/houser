@@ -12,6 +12,7 @@ module.exports = {
     signup: (req, res) => {
         const {username, password, name} = req.body;
         const db = req.app.get('db');
+        console.log("is this working")
         db.check_user_exists(username).then(user => {
             if(user.length){
                 res.status(200).send('Username already exists, please use a different username')
@@ -33,6 +34,7 @@ module.exports = {
 login: async (req, res) =>{
     const {username, password} = req.body;
     const db = req.app.get('db');
+    console.log('logggin')
 
     let userFound = await db.check_user_exists(username);
     if(!userFound[0]){

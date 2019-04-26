@@ -4,6 +4,8 @@ import Forum from "./Components/Forum/Forum"
 import Dash from "./Components/Dashboard/Dashboard"
 import Res from "./Components/Resources/Resources"
 import Chat from "./Components/ChatRoom/ChatRoom"
+import SignUp from "./Components/Header/SignUp";
+import Login from "./Components/Header/Login"
 
 
 export default(
@@ -16,6 +18,8 @@ export default(
         <Route path='/Resources' component={Res}/>
 
         <Route path='/ChatRoom' component={Chat}/>
+        <Route path='/signup' component={SignUp} />
+        <Route path='/login' component={Login} />
         </div>
     
     </Switch>

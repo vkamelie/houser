@@ -7,11 +7,14 @@ const initialState = {
   export default function reducer(state = initialState, action) {
     switch (action.type) {
       case SET_USER:
+      console.log(action.payload, "yoyyoyoyo")
         return { ...state, user: action.payload };
       default:
         return state;
     }
   }
+
+
   
   export function setUser(user) {
     return {

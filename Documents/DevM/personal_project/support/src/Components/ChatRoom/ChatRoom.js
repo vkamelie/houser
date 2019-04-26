@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import "./ChatRoom.css"
 // import io from "socket.io-client"
 
+
 // const socketUrl = "http://192.168.0.58:4001/"
 
 export default class ChatRoom extends Component{
@@ -28,6 +29,8 @@ export default class ChatRoom extends Component{
         const {title} = this.props
         return(
             <div className='chatroom'>
+            
+            
                 {title}
         
 

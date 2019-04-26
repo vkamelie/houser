@@ -1,0 +1,18 @@
+/* .Dash {
+    background: lavender;
+    border: purple soild;
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
